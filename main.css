@@ -1,0 +1,27 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.logo-image {
+  position: left;
+  position: absolute;
+  height: 150px;
+}
+
+.sub-btn {
+  text-decoration: none;
+  color: #ffffff;
+  background: #4e7252;
+  text-align: center;
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  margin: 3%;
+  position: absolute;
+  right: 5px;
+  display: inline-block;
+}
+.sub-btn:hover {
+  background: #37503a;
+  color: #ffffff;
+}
