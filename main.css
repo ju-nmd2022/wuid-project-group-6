@@ -14,14 +14,89 @@
   background: #4e7252;
   text-align: center;
   border: none;
-  width: 200px;
+  width: 180px;
   padding: 1rem;
   margin: 3%;
   position: absolute;
   right: 5px;
   display: inline-block;
 }
+
 .sub-btn:hover {
   background: #37503a;
   color: #ffffff;
+}
+
+.topnav {
+  background-color: #4e7252;
+  grid-column: 1 / 6;
+  grid-row: 2;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.topnav a {
+  float: center;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 9px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  background-color: #37503a;
+  color: #ffffff;
+}
+
+.topnav a.active {
+  background-color: #37503a;
+  color: #ffffff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1em;
+  min-height: 100vh;
+}
+
+body,
+html {
+  background-image: url(Image/popular-sudanese-foods.jpg);
+  background-color: #ffffff;
+  /* background-size: ; */
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  width: 100%;
+  padding: 0%;
+  margin: 0;
+}
+
+.hero-head {
+  /* grid-column: 1 / 6;
+  grid-row: 3; */
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  position: absolute;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+}
+
+.item searcharea input[type="text"] {
+  float: center;
+  padding: 10px;
+  border: none;
+  font-size: 18px;
 }
