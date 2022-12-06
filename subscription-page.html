@@ -7,33 +7,58 @@
     <link rel="stylesheet" href="main.css" />
     <title>My Clever Kitchen</title>
   </head>
+  <header>
+    <div class="header">
+      <a href="index.html"
+        ><img src="" alt="logo" class="logo-image" id="logo"
+      /></a>
+      <a href="subscription-page.html" class="sub-btn">SUBSCRIBE</a>
+    </div>
+  </header>
   <body>
-    <main class="Container">
-      <div class="item header">
-        <p>Subscribe</p>
+    <main class="container">
+      <div class="topnav">
+        <a class="home" href="index.html">HOME</a>
+        <a href="library-page.html" class="library">LIBRARY</a>
+        <a href="my-page.html" class="mypage">MY PAGE</a>
+        <a href="about-page.html" class="about">ABOUT US</a>
+        <a href="contact-page.html" class="contact">CONTACT</a>
       </div>
-      <div class="item menu">
-        <p>Home</p>
-        <p>Library</p>
-        <p>My page</p>
-        <p>About us</p>
-        <p>Contact</p>
       <div class="subscribearea">
-        <h2>Subscription</h2>
-        <p>Get access to all Clever Kitchen recipes</p>
-        <p>59 kr/month</p>
-        <p>Contact information</p>
-          <p>Name</p>
-          <p>Adress</p>
-          <p>Zip</p>
-          <p>Email</p>
-          <p>Nr</p>
-        <p>Payment information</p>
-          <p>Card number</p>
-          <p>Expiration date</p>
-          <p>CVV</p>
-        <p>Subscribe</p>
+        <div class="onlytext">
+          <div class="subscribetitles">
+            <h2 class="bigtitle">SUBSCRIPTION</h2>
+            <p class="subtitle1">Get access to all Clever Kitchen recipes</p>
+            <p class="subtitle2">59 kr/month</p>
+          </div>
+          <div class="contactbox">
+            <p class="contactt">Contact information</p>
+            <div class="textFieldWrapper">
+              <input type="text" class="p-name" placeholder="Name" />
+            </div>
+            <div class="textFieldWrapper">
+              <input type="text" class="p-adress" placeholder="Adress" />
+              <input type="text" class="zip" placeholder="Zip" />
+            </div>
+            <div class="textFieldWrapper">
+              <input type="text" class="p-email" placeholder="Email" />
+              <input type="text" class="p-number" placeholder="Nr" />
+            </div>
+          </div>
+          <div class="paybox">
+            <p class="paymentt">Payment information</p>
+            <div class="textFieldWrapper">
+              <input type="text" class="cardnumber" placeholder="Card number" />
+            </div>
+            <div class="textFieldWrapper">
+              <input type="text" class="exdate" placeholder="Expiration date" />
+              <input type="text" class="cvv" placeholder="CVV" />
+            </div>
+          </div>
+        </div>
+        <a href="thxsub-page.html" class="smallsubscribe">Subscribe</a>
       </div>
     </main>
   </body>
+  <div class="footer"><footer>My Clever Kitchen © 2022</footer></div>
 </html>

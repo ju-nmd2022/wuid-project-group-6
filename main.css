@@ -1,3 +1,5 @@
+/* LANDING PAGE */
+
 * {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -5,7 +7,7 @@
 .logo-image {
   position: left;
   position: absolute;
-  height: 150px;
+  height: 110px;
 }
 
 .sub-btn {
@@ -16,13 +18,18 @@
   border: none;
   width: 180px;
   padding: 1rem;
-  margin: 3%;
-  position: absolute;
-  right: 5px;
+  margin: 2%;
   display: inline-block;
 }
 
-.sub-btn:hover {
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.sub-btn:hover,
+.smallsubscribe:hover {
   background: #37503a;
   color: #ffffff;
 }
@@ -30,7 +37,7 @@
 .topnav {
   background-color: #4e7252;
   grid-column: 1 / 6;
-  grid-row: 2;
+  grid-row: 1;
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -64,13 +71,13 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  gap: 1em;
   min-height: 100vh;
+  gap: 1em;
 }
 
 .hero-head {
   grid-column: 1 / 6;
-  grid-row: 2 / 6;
+  grid-row: 1 / 5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +103,6 @@
   font-size: x-large;
   line-height: 2.5em;
   text-shadow: 1px 1px 4px rgb(38, 38, 38);
-  margin-top: -60px;
 }
 
 body {
@@ -112,8 +118,408 @@ body {
   height: 40px;
   width: 100%;
   bottom: 0%;
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* ABOUT PAGE */
+
+.aboutarea {
+  grid-column: 1 / 6;
+  grid-row: 1 / 6;
+  background-image: url(Image/popular-sudanese-foods.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutustext {
+  width: 40%;
+  background-color: white;
+  opacity: 80%;
+}
+
+.aboutustext {
+  padding: 2%;
+}
+
+.aboutustext,
+.ourvisiontext {
+  line-height: 1.5em;
+}
+
+.listbox {
+  width: 42%;
+  background-color: white;
+  opacity: 80%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.aboutus,
+.ourvision {
+  color: white;
+  text-shadow: 1px 1px 4px rgb(38, 38, 38);
+}
+
+.aboutus {
+  margin-bottom: -0.5px;
+  margin-top: 50px;
+}
+
+/* CONTACT PAGE */
+
+.contactarea {
+  grid-column: 1 / 6;
+  grid-row: 1 / 6;
+  background-image: url(Image/popular-sudanese-foods.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contacttext {
+  text-align: center;
+  font-size: large;
+  background-color: white;
+  opacity: 80%;
+  width: 100vw;
+  padding: 2%;
+}
+
+.contacttitle {
+  color: white;
+  text-shadow: 1px 1px 4px rgb(38, 38, 38);
+  font-size: xx-large;
+}
+
+.number,
+.adress,
+.email {
+  font-weight: bold;
+}
+
+/* SUBSCRIBE PAGE */
+
+.subscribearea {
+  grid-column: 1 / 6;
+  grid-row: 1 / 6;
+  background-image: url(Image/popular-sudanese-foods.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.textFieldWrapper {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.p-name,
+.p-adress,
+.zip,
+.p-email,
+.p-number,
+.cardnumber,
+.exdate,
+.cvv {
+  background-color: white;
+  padding: 3%;
+  opacity: 80%;
+  font-size: medium;
+  margin-bottom: 10px;
+}
+
+.p-name,
+.cardnumber {
+  width: 100%;
+}
+
+.p-adress {
+  width: 60%;
+  margin-right: 10px;
+}
+
+.zip {
+  width: 40%;
+}
+
+.p-email {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.p-number {
+  width: 50%;
+}
+
+.exdate {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.cvv {
+  width: 50%;
+}
+
+.subscribetitles {
+  color: white;
+  text-align: center;
+}
+
+.bigtitle {
+  font-size: xx-large;
+}
+
+.subtitle2 {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.subtitle1 {
+  margin-top: -10px;
+  font-size: large;
+}
+
+.subscribetitles {
+  line-height: 1em;
+  text-shadow: 1px 1px 4px rgb(38, 38, 38);
+}
+
+.onlytext {
+  margin-top: 100px;
+  width: 25%;
+}
+
+.contactt,
+.paymentt {
+  color: white;
+}
+
+.smallsubscribe {
+  text-decoration: none;
+  color: #ffffff;
+  background: #4e7252;
+  text-align: center;
+  border: none;
+  width: 140px;
+  padding: 1rem;
+  margin: 2%;
+  display: inline-block;
+}
+
+.contactbox,
+.paybox {
+  margin-top: 40px;
+  font-size: large;
+}
+
+.p.adress {
+  margin-right: 1px;
+}
+
+/* ThANK YOU SUBSCRIPTION PAGE */
+
+.thxarea {
+  grid-column: 1 / 6;
+  grid-row: 1 / 6;
+  background-image: url(Image/popular-sudanese-foods.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.thxtext {
+  font-size: 300%;
+  width: 350px;
+  text-align: center;
+  line-height: 1.2em;
+  text-shadow: 1px 1px 4px rgb(38, 38, 38);
+}
+
+.conftext {
+  font-size: 130%;
+  width: 300px;
+  text-align: center;
+  margin-top: -10px;
+  text-shadow: 1px 1px 4px rgb(38, 38, 38);
+}
+
+/* LIBRARY PAGE/RECIPE PAGE */
+
+.libraryarea {
+  grid-column: 1 / 6;
+  grid-row: 1 / 6;
+  background-image: url(Image/popular-sudanese-foods.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: space;
+  justify-content: space-around;
+  flex-direction: row;
+  color: white;
+}
+
+.filtering,
+.results,
+.ingredients {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.filtering,
+.ingredients {
+  width: 15%;
+  margin-top: 203px;
+}
+
+.results {
+  width: 58%;
+}
+
+.filtering {
+  margin-left: 1%;
+  padding: 1%;
+  color: black;
+  background-color: white;
+  opacity: 90%;
+}
+
+.ingredients {
+  margin-right: 1%;
+  background-color: white;
+  opacity: 90%;
+  color: black;
+  padding: 1%;
+  height: 50vh;
+}
+
+.searchtype {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchtext {
+  background-color: white;
+  padding: 2%;
+  opacity: 90%;
+  font-size: medium;
+  width: 35%;
+}
+
+.rx3 {
+  display: flex;
+  justify-content: space-around;
+  height: 24vh;
+  margin-top: 5%;
+}
+
+.names {
+  display: flex;
+  justify-content: space-around;
+}
+
+.n1,
+.n2,
+.n3 {
+  background-color: white;
+  color: black;
+  opacity: 90%;
+  padding: 1%;
+  width: 20%;
+  text-align: center;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10%;
+  line-height: 0em;
+}
+
+/* DETAIL PAGE */
+
+.recipearea {
+  grid-column: 1 / 6;
+  grid-row: 1 / 6;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.allinstructions,
+.detailpic {
+  background-color: white;
+}
+
+.detailpic {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 5%;
+}
+
+.briefinfo {
+  padding-left: 2%;
+  padding-right: 15%;
+}
+
+.allinstructions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.instructions1,
+.instructions2 {
+  margin-top: 3%;
+}
+
+.ing,
+.inst {
+  background-color: #4e7252;
+  color: white;
+  font-weight: lighter;
+  width: 45vw;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 0px;
+}
+
+.container {
+  background-color: white;
+  padding-bottom: 2%;
+}
+
+.list1,
+.list2 {
+  padding-left: 35%;
+}
+
+.instructions1 {
+  background-color: #d7e3d8;
+}
+
+.instructions2 {
+  background-color: #d7e3d8;
 }

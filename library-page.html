@@ -7,81 +7,255 @@
     <link rel="stylesheet" href="main.css" />
     <title>My Clever Kitchen</title>
   </head>
+  <header>
+    <div class="header">
+      <a href="index.html"
+        ><img src="" alt="logo" class="logo-image" id="logo"
+      /></a>
+      <a href="subscription-page.html" class="sub-btn">SUBSCRIBE</a>
+    </div>
+  </header>
   <body>
     <main class="container">
-      <div class="item header">
-        <p>Subscribe</p>
+      <div class="topnav">
+        <a class="home" href="index.html">HOME</a>
+        <a href="library-page.html" class="active">LIBRARY</a>
+        <a href="my-page.html" class="mypage">MY PAGE</a>
+        <a href="about-page.html" class="about">ABOUT US</a>
+        <a href="contact-page.html" class="contact">CONTACT</a>
       </div>
-      <div class="item menu">
-        <p>Home</p>
-        <p>Library</p>
-        <p>My page</p>
-        <p>About us</p>
-        <p>Contact</p>
-        <div class="libraryarea parent">
-          <div class="libraryarea filtering">
-            <p>Holiday</p>
-              <p>Christmas</p>
-              <p>Thanksgiving</p>
-              <p>Easter</p>
-              <p>Halloween</p>
-              <p>New years</p>
-              <p>Midsummer</p>
-            <p>Meal</p>
-              <p>Breakfast</p>
-              <p>Lunch</p>
-              <p>Snack</p>
-              <p>Dinner</p>
-              <p>Dessert</p>
-              <p>Drink</p>
-            <p>Diet</p>
-              <p>Vegetarian</p>
-              <p>Vegan</p>
-              <p>Lacto-ovo</p>
-              <p>Pescetarian</p>
-              <p>Low-carb</p>
-              <p>Low-fat</p>
-            <p>Allergy</p>
-              <p>Gluten-free</p>
-              <p>Lactose-free</p>
-              <p>Milk protein-free</p>
-              <p>Peanut-free</p>
-              <p>Egg-free</p>
-            <p>Food-culture</p>
-              <p>Asia</p>
-              <p>Europe</p>
-              <p>Scandinavia</p>
-              <p>North America</p>
-              <p>South America</p>
-              <p>Middle east</p>
-              <p>Africa</p>
-              <p>Australia</p>
-            <p>Cooking time</p>
-              <p>10-20 min</p>
-              <p>20-30 min</p>
-              <p>30-40 min</p>
-              <p>40-50 min</p>
-              <p>>50 min</p>
+      <div class="libraryarea">
+        <div class="filtering">
+          <p class="filtertitle">HOLIDAY</p>
+          <div class="check">
+            <p>Christmas</p>
+            <input type="checkbox" class="checkboc" />
           </div>
-          <div class="libraryarea results">
-            <p>Type your ingredients here...</p>
-            <p>Recipe 1</p>
-            <p>Recipe 2</p>
-            <p>Recipe 3</p>
-            <p>Recipe 4</p>
-            <p>Recipe 5</p>
-            <p>Recipe 6</p>
-            <p>Recipe 7</p>
-            <p>Recipe 8</p>
-            <p>Recipe 9</p>
-            <p>Recipe 10</p>
-            <p>Recipe 11</p>
+          <div class="check">
+            <p>Thanksgiving</p>
+            <input type="checkbox" class="checkbox" />
           </div>
-          <div class="libraryarea ingredients">
-            <p>My ingredients</p>
-            <p>Paprika</p>
+          <div class="check">
+            <p>Easter</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Halloween</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>New years</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Midsummer</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <p class="filtertitle">MEAL</p>
+          <div class="check">
+            <p>Breakfast</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Lunch</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Snack</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Dinner</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Dessert</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Drink</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <p class="filtertitle">DIET</p>
+          <div class="check">
+            <p>Vegetarian</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Vegan</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Lacto-ovo</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Pescetarian</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Low-carb</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Low-fat</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <p class="filtertitle">ALLERGY</p>
+          <div class="check">
+            <p>Gluten-free</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Lactose-free</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Milk protein-free</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Peanut-free</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Egg-free</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <p class="filtertitle">FOOD-CULTURE</p>
+          <div class="check">
+            <p>Asia</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Europe</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Scandinavia</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>North America</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>South America</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Middle east</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Africa</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>Australia</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <p class="filtertitle">COOKING TIME</p>
+          <div class="check">
+            <p>10-20 min</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>20-30 min</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>30-40 min</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>40-50 min</p>
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <div class="check">
+            <p>>50 min</p>
+            <input type="checkbox" class="checkbox" />
           </div>
         </div>
+        <div class="results">
+          <div class="searchtype">
+            <input
+              type="text"
+              class="searchtext"
+              placeholder="Type your ingredients here..."
+            />
+          </div>
+          <div class="recipes">
+            <div class="rx3">
+              <a href="detail-page.html"
+                ><img
+                  src="Image/pexels-ella-olsson-1640772.png"
+                  alt="recipe1"
+                  width="250em"
+              /></a>
+              <img src="Image/pexels-bam-awey-2015191.png" alt="recipe2" />
+              <img
+                src="Image/pexels-valeria-boltneva-1639556.png"
+                alt="recipe3"
+              />
+            </div>
+            <div class="names">
+              <p class="n1">Recipe 1</p>
+              <p class="n2">Recipe 2</p>
+              <p class="n3">Recipe 3</p>
+            </div>
+            <div class="rx3">
+              <img
+                src="Image/pexels-william-choquette-2641886.png"
+                alt="recipe4"
+              />
+              <img
+                src="Image/pexels-natasha-filippovskaya-4394615.png"
+                alt="recipe5"
+              />
+              <img src="Image/pexels-makafood-8935245.png" alt="recipe6" />
+            </div>
+            <div class="names">
+              <p class="n1">Recipe 4</p>
+              <p class="n2">Recipe 5</p>
+              <p class="n3">Recipe 6</p>
+            </div>
+            <div class="rx3">
+              <img
+                src="Image/pexels-dayvison-de-oliveira-silva-5695921.png"
+                alt="recipe7"
+              />
+              <img
+                src="Image/pexels-ruslan-khmelevsky-7655102.png"
+                alt="recipe8"
+              />
+              <img src="Image/pexels-engin-akyurt-2456435.png" alt="recipe9" />
+            </div>
+            <div class="names">
+              <p class="n1">Recipe 7</p>
+              <p class="n2">Recipe 8</p>
+              <p class="n3">Recipe 9</p>
+            </div>
+            <div class="rx3">
+              <img src="Image/pexels-photo-7656556.png" alt="recipe10" />
+              <img src="Image/pexels-photo-2067470.png" alt="recipe11" />
+              <img src="Image/pexels-photo-724294.png" alt="recipe12" />
+            </div>
+            <div class="names">
+              <p class="n1">Recipe 10</p>
+              <p class="n2">Recipe 11</p>
+              <p class="n3">Recipe 12</p>
+            </div>
+          </div>
+        </div>
+        <div class="ingredients">
+          <p>MY INGREDIENTS</p>
+          <div class="paprika">
+            <p class="paprikatext">Paprika</p>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
+  <div class="footer"><footer>My Clever Kitchen © 2022</footer></div>
 </html>
