@@ -23,7 +23,7 @@
 }
 
 .sub-btnmobile {
-  visibility: hidden;
+  display: none;
 }
 
 .header {
@@ -70,7 +70,8 @@
   color: #ffffff;
 }
 
-.topnavmobile {
+.topnavmobile,
+.slider {
   display: none;
 }
 
@@ -90,8 +91,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  max-height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 .hero-head {
@@ -189,14 +189,22 @@ body {
   justify-content: center;
 }
 
+.libraryicon,
+.homeicon,
+.usericon,
+.infoicon,
+.slidericon {
+  filter: invert(100%);
+}
+
 @media screen and (max-width: 800px) {
   .topnav,
   .sub-btn {
-    visibility: hidden;
+    display: none;
   }
 
   .sub-btnmobile {
-    visibility: visible;
+    display: block;
     position: absolute;
     right: 0px;
     top: 115px;
@@ -231,8 +239,7 @@ body {
   }
 
   .footer {
-    visibility: hidden;
-    height: 0px;
+    display: none;
   }
 
   .title {
@@ -259,8 +266,8 @@ body {
     padding-top: 2px;
   }
 
-  .herohead {
-    background-size: auto;
+  .hero-head {
+    margin-top: 100px;
   }
 }
 
@@ -347,6 +354,10 @@ body {
     width: 100%;
     margin-top: 50px;
     text-align: center;
+  }
+
+  .aboutarea {
+    margin-top: 100px;
   }
 }
 
@@ -545,6 +556,12 @@ body {
   .smallsubscribe {
     margin-bottom: 100px;
   }
+  .subscribearea {
+    margin-top: 100px;
+  }
+  .sub-btnhide {
+    visibility: hidden;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -620,11 +637,14 @@ body {
     font-size: 110%;
     width: 250px;
   }
+  .thxarea {
+    margin-top: 100px;
+  }
 }
 
 /* LIBRARY PAGE/RECIPE PAGE */
 
-.container1 {
+.container2 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -639,14 +659,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: space;
   justify-content: space-around;
   flex-direction: row;
   color: white;
 }
 
 .filtering,
-.ingredients {
+.ingredients,
+.results {
   margin-top: 200px;
   margin-bottom: 50px;
 }
@@ -658,11 +678,11 @@ body {
 
 .results {
   width: 58%;
-  margin-top: 100px;
 }
 
 .filtering {
   margin-left: 1%;
+  margin-right: 30px;
   padding: 1%;
   color: black;
   background-color: white;
@@ -671,6 +691,7 @@ body {
 
 .ingredients {
   margin-right: 1%;
+  margin-left: 30px;
   background-color: white;
   opacity: 90%;
   color: black;
@@ -679,29 +700,39 @@ body {
 }
 
 .searchtype {
+  height: 6%;
+  min-width: 30%;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .searchtext {
   background-color: white;
-  padding: 2%;
+  padding: 1%;
+  padding-left: 3%;
   opacity: 90%;
   font-size: medium;
-  width: 35%;
+  width: 100%;
+  height: 96%;
 }
 
 .rx3 {
   display: flex;
   justify-content: space-around;
-  height: 24vh;
-  margin-top: 5%;
 }
 
 .names {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.recipe1link {
+  margin: 0px;
+  width: 28%;
 }
 
 .n1,
@@ -723,11 +754,6 @@ body {
   line-height: 0em;
 }
 
-.recipe1 {
-  min-width: 70%;
-  height: 100%;
-}
-
 .paprika {
   background-color: lightgrey;
   width: 90px;
@@ -735,6 +761,83 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.resultsmobile {
+  display: none;
+  margin-top: 105px;
+}
+
+.recipemobile {
+  background-color: white;
+  opacity: 80%;
+  padding: 3%;
+  display: flex;
+  margin-bottom: 3%;
+}
+
+.recipetextmobile {
+  color: black;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 3%;
+}
+
+.recipe1linkmobile {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.recipetextp,
+.recipetexttitle {
+  margin: 1%;
+}
+
+.recipetexttitle {
+  font-size: larger;
+}
+
+@media screen and (max-width: 800px) {
+  .libraryarea {
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .results,
+  .filtering,
+  .ingredients {
+    display: none;
+  }
+  .resultsmobile {
+    display: block;
+  }
+  .searchtype {
+    margin-top: 40px;
+  }
+
+  .searchtype {
+    min-width: 55%;
+  }
+
+  .slider {
+    display: block;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 15px;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .searchtype {
+    min-width: 70%;
+  }
 }
 
 /* DETAIL PAGE */
@@ -765,7 +868,7 @@ body {
 
 .briefinfo {
   padding-left: 2%;
-  padding-right: 15%;
+  padding-right: 10%;
 }
 
 .allinstructions {
@@ -792,20 +895,109 @@ body {
   margin-top: 0px;
 }
 
-.container {
+.container3 {
   background-color: white;
   padding-bottom: 2%;
 }
 
 .list1,
 .list2 {
-  padding-left: 35%;
+  width: 60%;
 }
 
 .instructions1 {
   background-color: #d7e3d8;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .instructions2 {
   background-color: #d7e3d8;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.paprikarecipe {
+  margin-top: 0px;
+  display: none;
+}
+
+.paprikarecipebig {
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .container3 {
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .detailpic {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .briefinfo {
+    padding-right: 0px;
+  }
+  .paprikarecipe {
+    display: block;
+    font-size: xx-large;
+    width: 100%;
+  }
+
+  .paprikarecipebig {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .briefinfo {
+    padding-right: 5%;
+  }
+
+  .paprikarecipebig {
+    font-size: large;
+  }
+
+  .recipearea {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .paprikarecipe {
+    font-size: larger;
+  }
+  .allinstructions {
+    flex-direction: column;
+  }
+
+  .ing,
+  .inst {
+    width: 98%;
+    font-size: medium;
+    text-align: left;
+    padding-left: 5%;
+  }
+
+  .instructions1 {
+    margin-bottom: 20px;
+    margin-top: 10%;
+  }
+
+  .briefinfo {
+    padding-left: 0px;
+  }
+
+  .list1,
+  .list2 {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
