@@ -915,6 +915,7 @@ body {
 .briefinfo {
   padding-left: 2%;
   padding-right: 10%;
+  width: 80%;
 }
 
 .allinstructions {
@@ -934,7 +935,7 @@ body {
   background-color: #4e7252;
   color: white;
   font-weight: lighter;
-  width: 45vw;
+  width: 50vw;
   text-align: center;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -948,7 +949,19 @@ body {
 
 .list1,
 .list2 {
-  width: 60%;
+  width: 70%;
+}
+
+.list1 {
+  text-align: center;
+}
+
+.list2 {
+  margin-bottom: 5%;
+}
+
+li {
+  margin-top: 10px;
 }
 
 .instructions1 {
@@ -963,6 +976,10 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.detailpicoutline {
+  width: 100%;
 }
 
 .paprikarecipe {
@@ -983,6 +1000,10 @@ body {
     padding-bottom: 50px;
   }
 
+  .detailpicoutline {
+    width: 100%;
+  }
+
   .detailpic {
     flex-direction: column;
     justify-content: center;
@@ -992,6 +1013,8 @@ body {
   }
   .briefinfo {
     padding-right: 0px;
+    padding-left: 0px;
+    width: 95%;
   }
   .paprikarecipe {
     display: block;
@@ -1048,6 +1071,9 @@ body {
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .list1 {
+    text-align: left;
   }
 }
 
