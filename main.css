@@ -163,12 +163,10 @@ body {
   margin-left: 370px;
   padding-top: 10px;
   width: 30px;
-  border: 1px solid black;
 }
 
 .searchandicon {
   display: flex;
-  border: 1px solid black;
 }
 
 .searchicon {
