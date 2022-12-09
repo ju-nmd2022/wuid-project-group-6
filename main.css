@@ -100,11 +100,10 @@
   background-image: url(Image/popular-sudanese-foods.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 150px;
+  padding-top: 220px;
   padding-bottom: 100px;
 }
 
@@ -112,21 +111,45 @@
   width: 400px;
   height: 45px;
   font-size: medium;
-  padding-left: 2%;
+  padding-left: 10px;
   opacity: 80%;
+  margin-bottom: 5px;
 }
 
-.searchtitle {
+.lets,
+.get,
+.clever,
+.cooking {
   margin-bottom: 1px;
+  color: #4e7252;
+  margin: 0px;
+}
+
+.lets,
+.clever {
+  padding-right: 1.5%;
+}
+
+.get,
+.cooking {
+  padding-left: 1.5%;
+}
+
+.letsget,
+.clevercooking {
+  display: flex;
+  justify-content: center;
 }
 
 .title {
   font-family: "Bebas Neue";
-  width: 630px;
+  width: 650px;
   font-size: xx-large;
-  text-align: center;
   line-height: 2.5em;
   text-shadow: 1px 1px 4px rgb(38, 38, 38);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -136,7 +159,7 @@ body {
 
 .searchoptions {
   width: 400px;
-  padding: 0.6%;
+  padding-left: 10px;
   background-color: white;
   color: black;
   opacity: 80%;
@@ -247,10 +270,6 @@ body {
     width: 315px;
   }
 
-  .searchtitle {
-    margin-bottom: 10px;
-  }
-
   .text {
     width: 260px;
   }
@@ -258,7 +277,6 @@ body {
   .searchoptions {
     width: 260px;
     padding: 5px;
-    margin-top: 5px;
   }
 
   .libraryicon,
@@ -999,5 +1017,71 @@ body {
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
+  }
+}
+
+/* ANIMATIONS */
+
+.lets,
+.get,
+.clever,
+.cooking {
+  animation: color-animation 2.2s linear;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.lets {
+  --color-1: #ffffff;
+  --color-2: #ffffff;
+  --color-3: #ffffff;
+  --color-4: #ffffff;
+}
+
+.get {
+  --color-1: #4e7252;
+  --color-2: #ffffff;
+  --color-3: #ffffff;
+  --color-4: #ffffff;
+}
+
+.clever {
+  --color-1: #4e7252;
+  --color-2: #4e7252;
+  --color-3: #ffffff;
+  --color-4: #ffffff;
+}
+
+.cooking {
+  --color-1: #4e7252;
+  --color-2: #4e7252;
+  --color-3: #4e7252;
+  --color-4: #ffffff;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  25% {
+    color: var(--color-1);
+  }
+  26% {
+    color: var(--color-2);
+  }
+  50% {
+    color: var(--color-2);
+  }
+  51% {
+    color: var(--color-3);
+  }
+  75% {
+    color: var(--color-3);
+  }
+  76% {
+    color: var(--color-4);
+  }
+  100% {
+    color: var(--color-4);
   }
 }
