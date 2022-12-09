@@ -160,12 +160,15 @@ body {
 .searchiconoutline {
   height: 30px;
   position: absolute;
-  padding-left: 370px;
+  margin-left: 370px;
   padding-top: 10px;
+  width: 30px;
+  border: 1px solid black;
 }
 
 .searchandicon {
   display: flex;
+  border: 1px solid black;
 }
 
 .searchicon {
@@ -316,7 +319,7 @@ body {
   }
 
   .searchiconoutline {
-    padding-left: 235px;
+    margin-left: 235px;
   }
 }
 
