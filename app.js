@@ -1,19 +1,15 @@
-// function subscribe() {
-//  const email = document.querySelector(".p-email").innerHTML;
-// const email = document.querySelector(".p-email").value;
+const smallSubscribeButton = document.querySelector(".smallsubscribe");
 
-//console.log("subscribing", email);
-//window.localStorage.setItem("email", email);
-// window.location = '/subscription-page.html"';
-//}
+if (smallSubscribeButton) {
+  smallSubscribeButton.addEventListener("click", function () {
+    const email = document.querySelector(".p-email").value;
+    window.localStorage.setItem("email", email);
+  });
+}
 
-//document
-//.querySelector(".smallsubscribe")
-//.addEventListener("onClick", subscribe);
+const insertemail = document.querySelector(".insertemail");
 
-// const email = document.querySelector(".p-email").innerHTML;
-const email = document.querySelector(".p-email").value;
-
-console.log(email)e.log("subscribing", email);
-
-window.localStorage.setItem("email", email);
+if (insertemail) {
+  const email = window.localStorage.getItem("email");
+  insertemail.innerHTML = email;
+}
