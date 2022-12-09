@@ -97,7 +97,7 @@
 .hero-head {
   grid-column: 1 / 6;
   grid-row: 1 / 6;
-  background-image: url(Image/popular-sudanese-foods.jpg);
+  background-image: url(Image/pexels-photo-568370.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -123,16 +123,17 @@
   margin-bottom: 1px;
   color: #4e7252;
   margin: 0px;
+  font-family: "Bebas Neue", cursive;
 }
 
 .lets,
 .clever {
-  padding-right: 1.5%;
+  padding-right: 2%;
 }
 
 .get,
 .cooking {
-  padding-left: 1.5%;
+  padding-left: 2%;
 }
 
 .letsget,
@@ -142,10 +143,9 @@
 }
 
 .title {
-  font-family: "Bebas Neue";
   width: 650px;
-  font-size: xx-large;
-  line-height: 2.5em;
+  font-size: 300%;
+  line-height: 2em;
   text-shadow: 1px 1px 4px rgb(38, 38, 38);
   margin-bottom: 10px;
   display: flex;
@@ -266,8 +266,15 @@ body {
   }
 
   .title {
-    font-size: medium;
     width: 315px;
+  }
+
+  .lets,
+  .get,
+  .clever,
+  .cooking {
+    font-size: 100%;
+    line-height: 1.1em;
   }
 
   .text {
@@ -286,6 +293,17 @@ body {
 
   .hero-head {
     margin-top: 100px;
+    padding-top: 170px;
+  }
+
+  .logo-image {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .logo-image {
+    height: 100px;
   }
 }
 
@@ -302,7 +320,7 @@ body {
 .aboutarea {
   grid-column: 1 / 6;
   grid-row: 1 / 6;
-  background-image: url(Image/popular-sudanese-foods.png);
+  background-image: url(Image/pexels-photo-568370.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -342,10 +360,13 @@ body {
 .ourvision {
   color: white;
   text-shadow: 1px 1px 4px rgb(38, 38, 38);
+  font-family: "Bebas Neue", cursive;
+  font-size: 250%;
+  margin-bottom: 0px;
 }
 
-.aboutus {
-  margin-bottom: 2px;
+.ourvision {
+  margin-bottom: 15px;
 }
 
 .contactmobile {
@@ -373,6 +394,7 @@ body {
     width: 100%;
     margin-top: 50px;
     text-align: center;
+    color: white;
   }
 
   .aboutarea {
@@ -393,7 +415,7 @@ body {
 .contactarea {
   grid-column: 1 / 6;
   grid-row: 1 / 6;
-  background-image: url(Image/popular-sudanese-foods.jpg);
+  background-image: url(Image/pexels-photo-568370.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -415,7 +437,9 @@ body {
 .contacttitle {
   color: white;
   text-shadow: 1px 1px 4px rgb(38, 38, 38);
-  font-size: xx-large;
+  font-size: 250%;
+  font-family: "Bebas Neue", cursive;
+  margin-bottom: 1%;
 }
 
 .number,
@@ -437,7 +461,7 @@ body {
 .subscribearea {
   grid-column: 1 / 6;
   grid-row: 1 / 6;
-  background-image: url(Image/popular-sudanese-foods.jpg);
+  background-image: url(Image/pexels-photo-568370.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -506,12 +530,14 @@ body {
 }
 
 .bigtitle {
-  font-size: xx-large;
+  font-size: 250%;
+  font-family: "Bebas Neue", cursive;
 }
 
 .subtitle2 {
   font-weight: bold;
   font-size: x-large;
+  font-family: "Bebas Neue", cursive;
 }
 
 .subtitle1 {
@@ -530,7 +556,7 @@ body {
 }
 
 .contactt,
-.paymentt {
+.payment-info {
   color: white;
 }
 
@@ -557,7 +583,7 @@ body {
 
 @media screen and (max-width: 1170px) {
   .bigtitle {
-    font-size: x-large;
+    font-size: xx-large;
   }
 
   .subtitle2 {
@@ -620,7 +646,7 @@ body {
 .thxarea {
   grid-row: 1 / 6;
   grid-column: 1 / 6;
-  background-image: url(Image/popular-sudanese-foods.png);
+  background-image: url(Image/pexels-photo-568370.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -631,24 +657,25 @@ body {
 }
 
 .thxtext {
-  font-size: 300%;
+  font-size: 400%;
   width: 350px;
   text-align: center;
-  line-height: 1.2em;
+  line-height: 1.1em;
   text-shadow: 1px 1px 4px rgb(38, 38, 38);
+  font-family: "Bebas Neue", cursive;
 }
 
 .conftext {
   font-size: 130%;
   width: 300px;
   text-align: center;
-  margin-top: -10px;
+  margin-top: -25px;
   text-shadow: 1px 1px 4px rgb(38, 38, 38);
 }
 
 @media screen and (max-width: 800px) {
   .thxtext {
-    font-size: 200%;
+    font-size: 300%;
     width: 300px;
   }
 
@@ -674,7 +701,7 @@ body {
 .libraryarea {
   grid-column: 1 / 6;
   grid-row: 1 / 6;
-  background-image: url(Image/popular-sudanese-foods.png);
+  background-image: url(Image/pexels-photo-568370.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -941,10 +968,13 @@ body {
 .paprikarecipe {
   margin-top: 0px;
   display: none;
+  font-family: "Bebas Neue", cursive;
 }
 
 .paprikarecipebig {
   margin-top: 0px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 160%;
 }
 
 @media screen and (max-width: 800px) {
@@ -980,7 +1010,7 @@ body {
   }
 
   .paprikarecipebig {
-    font-size: large;
+    font-size: 140%;
   }
 
   .recipearea {
