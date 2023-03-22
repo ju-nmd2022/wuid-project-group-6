@@ -4,14 +4,13 @@ const list1 = document.querySelector('.recipes6 ol');
 
 
 const button = document.querySelector('.show-more-history');
+
 button.style.backgroundColor = 'rgb(107, 142, 35)';
 button.style.color = 'white';
 button.style.width = '150px';
 button.style.height = '30px';
-
 button.style.borderColor = 'red';
-button.style.borderWidth = '0px';
-button.style.borderStyle = 'dashed';
+
 
 
 let clickCount = 0;
