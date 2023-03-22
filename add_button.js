@@ -3,8 +3,6 @@ const list1 = document.querySelector('.recipes6 ol');
 
 
 
-const container = document.querySelector('.container');
-
 const button = document.querySelector('.show-more-history');
 button.style.backgroundColor = 'rgb(107, 142, 35)';
 button.style.color = 'white';
