@@ -1,6 +1,5 @@
 
-const list1 = document.querySelector('.recipe6 ol');
-const list2 = document.querySelector('.listbox2 ol');
+const list1 = document.querySelector('.recipes6 ol');
 
 
 
